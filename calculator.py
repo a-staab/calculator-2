@@ -4,7 +4,6 @@ calculator.py
 Using our arithmetic.py file from Exercise02, create the
 calculator program yourself in this file.
 
-
 """
 
 from arithmetic import *
@@ -14,13 +13,14 @@ from arithmetic import *
 while True:
     input_string = raw_input("> ")
     input_string = input_string.split(" ")
+    numbers_list = input_string[1:]
     if input_string[0] == 'q':
         print "Quitting calculator."
-        break  # Quit the program?
+        break  
     elif input_string[0] == "+":
-        print add(int(input_string[1]), int(input_string[2]))
+        print reduce(add, numbers_list)
     elif input_string[0] == "-":
-        print subtract(int(input_string[1]), int(input_string[2]))
+        print reduce(subtract, numbers_list)
     elif input_string[0] == "*":
         print multiply(int(input_string[1]), int(input_string[2]))
     elif input_string[0] == "/":
