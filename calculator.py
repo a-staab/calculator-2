@@ -16,15 +16,15 @@ while True:
     numbers_list = input_string[1:]
     if input_string[0] == 'q':
         print "Quitting calculator."
-        break  
+        break
     elif input_string[0] == "+":
         print reduce(add, numbers_list)
     elif input_string[0] == "-":
         print reduce(subtract, numbers_list)
     elif input_string[0] == "*":
-        print multiply(int(input_string[1]), int(input_string[2]))
+        print reduce(multiply, numbers_list)
     elif input_string[0] == "/":
-        print divide(int(input_string[1]), int(input_string[2]))
+        print reduce(divide, numbers_list)
     elif input_string[0] == "square":
         print square(int(input_string[1]))
     elif input_string[0] == "cube":
