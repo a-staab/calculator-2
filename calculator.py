@@ -30,6 +30,6 @@ while True:
     elif input_string[0] == "cube":
         print cube(int(input_string[1]))
     elif input_string[0] == "pow":
-        print power(int(input_string[1]), int(input_string[2]))
+        print reduce(power, numbers_list)
     elif input_string[0] == "mod" or "%":
-        print mod(int(input_string[1]), int(input_string[2]))
+        print reduce(mod, numbers_list)

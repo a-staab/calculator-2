@@ -31,10 +31,10 @@ def cube(num):
 
 def power(num, exponent):
     """Return num raised to the power of exponent"""
-    return num ** exponent
+    return int(num) ** int(exponent)
 
 
 def mod(num1, num2):
     """Return remainder of num1 divided by num2"""
-    return num1 % num2
+    return int(num1) % int(num2)
 # to be used with calculator file in calculator-2
