@@ -18,7 +18,7 @@ while True:
         print "Quitting calculator."
         break
     elif input_string[0] == "+":
-        print reduce(add, numbers_list)
+        print my_reduce(add, numbers_list)
     elif input_string[0] == "-":
         print reduce(subtract, numbers_list)
     elif input_string[0] == "*":

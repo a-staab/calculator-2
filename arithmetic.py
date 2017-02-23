@@ -42,9 +42,9 @@ def mod(num1, num2):
 
 
 def my_reduce(user_function, user_list):
-    while len(user_list) >= 2:
+    while len(user_list) > 1:
         new_first_item = user_function(user_list[0], user_list[1])
-        print new_first_item
         user_list.pop(0)
+        new_first_item = str(new_first_item)
         user_list[0] = new_first_item
-        return user_list[0]
+    return int(user_list[0])
